@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MachineServiceImpl<T extends Machine> implements MachineService<T> {
-    public List<T> getAll(Class<? extends Machine> type) {
+    public List<T> getAll(Class<? extends T> type) {
         List<? extends Machine> machines = new ArrayList<>();
         if (type.equals(Excavator.class)) {
             MachineProducer<Excavator> producer = new ExcavatorProducer();

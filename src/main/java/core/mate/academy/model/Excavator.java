@@ -28,7 +28,3 @@ public class Excavator extends Machine {
         System.out.println("Excavator started to work");
     }
 }
-
-
-
-
